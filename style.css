@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ddd;
+    font-family: Arial, sans-serif; 
+    background: url(https://th.bing.com/th/id/R.deb9c4ef37b4526a65010e39df5aa12e?rik=%2b0%2fUqc3oSEIedA&riu=http%3a%2f%2f4.bp.blogspot.com%2f-GcvdqgeTCto%2fTVkcTW0jZKI%2fAAAAAAAASYo%2fYMb9g_AhtzQ%2fs1600%2fGreen-Nature-with-sunrise-wallpaper.jpeg&ehk=dCv24XIrcTirCtTHJ9x5mx8kE6UXyk8gCWKTnsmn41s%3d&risl=&pid=ImgRaw&r=0);
+}
+
+canvas {
+    border: 1px solid #333;
+    background-color: gray; 
+    box-shadow: 5px 5px 10px 1px #000000;
+    background: url(https://th.bing.com/th/id/R.a2c69ecef13fb970e16225422f390fc6?rik=OKYDjimXLYPOIA&riu=http%3a%2f%2fimageafter.com%2fimage.php%3fimage%3db19grounds003.jpg%26dl%3d1&ehk=dPdbeHW5r5AfIQeMsssQrDSHfASrLbB8RKld8sLirGU%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+}
+
+.score-container,
+.best-score-container {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+        box-shadow: 5px 5px 10px 1px #000000;
+
+}
+
+.score-container {
+    top: 10px;
+    left: 10px;
+
+}
+
+.best-score-container {
+    top: 40px;
+    left: 10px;
+}
+
+@keyframes snake-animation {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+@keyframes fruit-animation {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+.menu {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px 1px #000000;
+}
+
+@media only screen and (max-width: 600px) {
+    canvas {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .score-container,
+    .best-score-container,
+    .menu {
+        font-size: 14px;
+    }
+}
